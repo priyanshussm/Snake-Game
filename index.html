@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Classic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <img class="snakepic" src="snake.png">
+        <div class="instructions">
+            <p>Instructions</p>
+            <ul class="instru">
+                <p><br></p>
+                <li>Use the arrow keys to navigate the snake</li>
+                <li>Your objective is to feed the snake without hitting the snake itself or the boundaries</li>
+                <li>Press any key other than arrow key to pause the game</li>
+            </ul>
+        </div>
+        <div class="difficulty">
+            <br>
+            <p> Choose difficulty level:
+                <select id="select1">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <input type="submit" value="Submit" onclick="getSpeed()">
+            </p>
+        </div>
+        <div id="pause">Paused<br>Press any arrow key to resume</div>
+        <div id="gameOver">Game Over.</div>
+        <div id="play">
+            <a href="index.html">Play Again</a>
+        </div>
+        <div id="scoreBox">Score: </div>
+        <div id="hscoreBox">
+            <div class="hs"> High Score</div>
+            <div id="easyHsbox">Easy : </div>
+            <div id="medHsbox">Medium : </div>
+            <div id="hardHsbox">Hard : </div>
+        </div>
+        <div id="board"></div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
